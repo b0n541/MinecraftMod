@@ -1,5 +1,7 @@
 {
   "item.minecraftmod.sapphire": "Sapphire",
   "item.minecraftmod.raw_sapphire": "Raw Sapphire",
+  "block.minecraftmod.sapphire_block": "Block of Sapphire",
+  "block.minecraftmod.raw_sapphire_block": "Block of Raw Sapphire",
   "creativetab.minecraftmod.sapphire_tab_title": "Sapphire Tab"
 }

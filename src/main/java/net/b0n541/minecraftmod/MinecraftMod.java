@@ -1,6 +1,7 @@
 package net.b0n541.minecraftmod;
 
 import com.mojang.logging.LogUtils;
+import net.b0n541.minecraftmod.block.ModBlocks;
 import net.b0n541.minecraftmod.item.ModCreativeModeTab;
 import net.b0n541.minecraftmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -38,6 +39,7 @@ public class MinecraftMod {
 
         ModCreativeModeTab.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -67,6 +69,8 @@ public class MinecraftMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
+            event.accept(ModBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.RAW_SAPPHIRE_BLOCK);
         }
     }
 
